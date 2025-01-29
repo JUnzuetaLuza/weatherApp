@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.App {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  width: 70%;
+  margin: 1rem;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  transition: background 0.3s ease;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 1);
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: #23a6d5;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #1e87b0;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.weather-info {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.weather-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.weather-info p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+.weather-info .forecast {
+  margin-top: 1.5rem;
+}
+
+.weather-info .forecast h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.weather-info .forecast div {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.weather-info .forecast div:hover {
+  transform: translateY(-5px);
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 1rem;
+}

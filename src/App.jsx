@@ -72,17 +72,6 @@ function App() {
           <p>Wind Speed: {weatherData.days[0].windspeed} km/h</p>
           <p>Conditions: {weatherData.days[0].conditions}</p>
           <p>Chance of Rain: {weatherData.days[0].precip}%</p>
-
-          <h3>24-Hour Forecast</h3>
-          <div>
-            {weatherData.days[0].hours.map((hour, index) => (
-              <div key={index}>
-                <p>
-                  {new Date(hour.datetimeEpoch * 1000).toLocaleTimeString()}: {hour.temp}°C, {hour.conditions}
-                </p>
-              </div>
-            ))}
-          </div>
         </motion.div>
       ) : (
         !loading && <p>No weather data available. Please enter a valid location.</p>
