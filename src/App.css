@@ -151,3 +151,44 @@ button:disabled {
   color: #fff;
   margin-top: 1rem;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .weather-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .weather-info p {
+    font-size: 1rem;
+  }
+
+  .weather-info .forecast h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .weather-info h2 {
+    font-size: 1.25rem;
+  }
+
+  .weather-info p {
+    font-size: 0.9rem;
+  }
+
+  .weather-info .forecast h3 {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
