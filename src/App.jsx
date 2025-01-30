@@ -2,6 +2,9 @@ import "./App.css"
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
+import cloud1 from "./assets/cloud1.png";
+import cloud2 from "./assets/cloud2.png";
+import cloud3 from "./assets/cloud3.png";
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 
@@ -48,6 +51,41 @@ function App() {
 
   return (
     <div className="App">
+
+      <div
+        className="cloud"
+        style={{
+          top: "10%",
+          left: "-10%",
+          width: "150px",
+          height: "100px",
+          backgroundImage: `url(${cloud1})`,
+          animationDuration: "20s",
+        }}
+      ></div>
+      <div
+        className="cloud"
+        style={{
+          top: "30%",
+          right: "-10%",
+          width: "200px",
+          height: "120px",
+          backgroundImage: `url(${cloud2})`,
+          animationDuration: "25s",
+        }}
+      ></div>
+      <div
+        className="cloud"
+        style={{
+          top: "50%",
+          left: "-10%",
+          width: "180px",
+          height: "110px",
+          backgroundImage: `url(${cloud3})`,
+          animationDuration: "10s",
+        }}
+      ></div>
+      
       <h1>Weather App</h1>
       <input
         type="text"
